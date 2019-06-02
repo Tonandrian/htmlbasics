@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TABLES AND FORMS</title>
+</head>
+<body>
+    <h1>Tables</h1>
+    <p>Tables include three sections, head, body, and footer. Each part contains data relevent to that section.</p>
+
+    <table border="1">
+        <!-- Table head -->
+        <thead>
+            <!-- Table row, row of cells-->
+            <tr>
+                <th>Heading 1</th>
+                <th>Heading 2</th>
+                <th>Heading 3</th>
+            </tr>
+        </thead>
+        <!-- Table body -->
+        <tbody>
+            <tr>
+                <!--Table Data-->
+                <td>Content</td>
+                <td>Content</td>
+                <td>Content</td>
+            </tr>
+        <!-- Second Table Row -->
+            <tr>
+                <td>content</td>
+                <td>content</td>
+                <td>content</td>
+            </tr>
+        </tbody>
+        <!-- Table Footer -->
+        <tfoot>
+            <tr>
+                <td>content</td>
+                <td>content</td>
+                <td>content</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+
+    <h2>Forms</h2>
+    <br>
+    <h3>Password Form</h3>
+    <form action="#">
+        <!-- Label for the form, the text that sits outsitde of the form. -->
+        <label for="username">Username:</label>
+        <!-- Input is a tag that allows TEXT input for a user within the form, the place holder attribute is the text that sits within the form before anything is entered.  -->
+        <input type="text" placeholder="Username">
+
+        <!-- Label form for password -->
+        <label for="password">Password:</label>
+
+        <input type="text" placeholder="Password">
+        <!-- Input type SUBMIT creates a button, value = submit creates the text on the button.-->
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>User Message Form</h2>
+    <form action="#">
+        <label for="name">Name:</label>
+        <input type="text" name="usersName">
+
+        <label for="Email">Email:</label>
+        <input type="text" name="userEmail">
+
+        <label for="message">Message:</label>
+        <!-- Creates a text box -->
+        <textarea name="usersMessage" id="1" cols="10" rows="10"></textarea>
+
+        <input type="submit" value="submit">
+    </form>
+
+    <h2>Input Types</h2>
+
+    <form action="#">
+        <label for="name">Name:</label>
+        <!-- required attribute makes this section of the form required. Duh.  -->
+        <input type="text" id="name" name="usersName" required>
+
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" name="bday">
+
+        <label for="color">Favorite Color</label>
+        <input type="color" id="color" name="color">
+
+        <label for="likes"> Likes</label>
+        <input type="checkbox" id="likes" name="Video Games"> Video Games <br>
+
+        <label for="Gender">Gender</label>
+        <input type="radio" id="gender" name="gender" value="male" checked> Male
+
+    </form>
+</body>
+</html>
+<!-- Labels are literally the labeling that surrounds any type of input.
+    Input designates what type of form to call like, text, checkbox, radio, color, date.
+    Attributes like checked, or required do certain things within the form.
+    
+    Label tag definition : The label tag defines a label form <input, button, meter, output, progress, select or text area> elements.
+    <label for = "text"> : The for attribuite associates the label with the input element. They're tied together by For within label and ID within input.
+        It allows the users mouse to be redirected to the form box when clicking on the label text on the webpage.
+    attribuite name allows javascript to reference the element, it also servers as a reference when data is submitted.
+-->
